@@ -97,7 +97,7 @@ export function SenicAuthProvider({
   callbackPath,
   storageType,
   onLogout,
-}: SenicAuthProviderProps): JSX.Element {
+}: SenicAuthProviderProps) {
   // Initialize config SYNCHRONOUSLY before any hooks run
   // This ensures config is ready before AuthCallback or any other component tries to use it
   // Previously this was in useEffect which caused a race condition on callback page
